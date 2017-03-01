@@ -1,23 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	
+</head>
+<body>
+
 <form action="#">
-<label>	Имя <br>	<input type="text" name="name"></label><br><br>	
-<label>	E-mail <br>	<input type="E-mail	" name="e-mail"></label><br><br>	
+Имя <br>	
+<input type="text" name="name"></label><br><br>	
+E-mail <br>	
+<input type="E-mail	" name="e-mail"><br><br>	
 
-<label>	Sex <br>	
-<input type="radio" name="male">Male<br><br>	
-<input type="radio" name="female">Female<br><br>	
-</label>
+Sex <br>	
+<input type="radio" name="sex" value="male">Male
+<input type="radio" name="sex" value="female">Female<br><br>	
 
-<label>	Current status <br>	
-<input type="checkbox" name="1">Student<br>
-<input type="checkbox" name="2">Employed<br>
-<input type="checkbox" name="3">Unemployed<br>
-</label>
+
+Current status <br>	
+<input type="checkbox" name="job" value="student">Student<br>
+<input type="checkbox" name="job" value="empl">Employed<br>
+<input type="checkbox" name="job" value="unem">Unemployed<br>
+
 <br>
-<label>	Month and Year of Birth <br>	
-<input type="month" name="Month	"><br><br>	
-<input type="number" name="year"><br><br>	
+Month and Year of Birth <br>	
+<select name="month">
+	<option value="1">January</option>
+	<option value="2">February</option>
+	<option value="3">March</option>
+</select>
 
+<select name="year">
+	<option value="1978">1978</option>
+	<option value="1984">1984</option>
+	<option value="2001">2001</option>
+</select>
+<br>
+Skills<br>
+<select size="5" multiple="multiple">
+	<optgroup label="Tech skills">
+	<option value="HTML">HTML</option>
+	<option value="CSS">CSS</option>
+	</optgroup>
+	<optgroup label="Soft skills">
+		<option value="Time">Time m</option>	
+	</optgroup>
+</select>
+<br>
+Photo<br>
+<input type="file" value="">
+<br>
 
-</label>
+Comments
+<br>
+<textarea cols="20" rows="10" name="comm"></textarea>
+<br>
+
+<input type="reset" value="Reset">
+<input type="submit" name="Отправить">
 </form>
+</body>
+<!DOCTYPE html>
 
+</html>
